@@ -58,7 +58,7 @@ const Weather = () => {
             
             <ul className='Weather-main'>
                 <li><span className='weather-description'>{capitalize(weather.weather?.[0].description)}</span></li>
-                <li><img src={weatherIcon && `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`} alt="" width="150px"/></li>
+                <li><img src={/* weatherIcon &&  */`http://openweathermap.org/img/wn/${weatherIcon}@2x.png`} alt="" width="150px"/></li>
                 <li><span className='temperature'>{Math.round(temperature)} ℃</span></li>
                 <li><button className='grades-btn' onClick={changeScale}>{isCelsius ? "℉" : "℃"}</button></li>
             </ul>
